@@ -1,0 +1,20 @@
+{
+    contentApps: [
+        {
+            "name": "Space Invaders",
+            "alias": "spaceInvaders",
+            "weight": 1,
+            "icon": "icon-rocket",
+            "view": "~/App_Plugins/SpaceInvaders/index.html",
+            "show": [ 
+                "+content/*", // show for all other content types
+                "+media/*", // show for all media types
+                "+role/admin"  // show for 'admin' user group 
+            ]
+        }
+    ],
+  javascript: [
+    "//cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js",
+    "~/App_Plugins/SpaceInvaders/js/invaders.controller.js"
+  ]
+}
